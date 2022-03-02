@@ -24,7 +24,7 @@ from getpass import getpass
 # SIN csv to iterate through
 def set_up_driver():
     #https://dbader.org/blog/python-parallel-computing-in-60-seconds#.
-    search_data_df = pd.read_csv("Z:\\Group Annuity Pricing\\Quote Tools\\Brad\\T4A Scraping Project\\Final Data List.csv",
+    search_data_df = pd.read_csv("Final Data List.csv",
                          encoding="latin-1", low_memory=False)
 
 
@@ -39,9 +39,9 @@ def set_up_driver():
     })
 
     # where chromedriver app is located; NOTE: as of Oct 29, 2021 RBC is using Chrome 94 - need to download again
-    driver = webdriver.Chrome(r"Z:\Group Annuity Pricing\Quote Tools\Brad\chromedriver_win32\chromedriver.exe", options=chrome_options)
+    driver = webdriver.Chrome(r"chromedriver.exe", options=chrome_options)
     # get() method will navigate to a page given by URL
-    listsURL = "https://rdis-online2.fg.rbc.com/proxy/login-ui/#/login-basic"
+    listsURL = "url"
     driver.get(listsURL)
     enter_login_info(driver, search_data_df)
 
@@ -52,8 +52,8 @@ def enter_login_info(driver, search_data_df):
     time.sleep(3)
     # ADD PAUSES BETWEEN STEPS
     # enter in your personal login info
-    username.send_keys("brad.mcglynn@rbc.com")
-    password.send_keys("#RBC_0n3L0g1n")
+    username.send_keys("abc")
+    password.send_keys("xyz")
     time.sleep(3)
     # simulates pressing the login button
     # NEED TO ADD SOMETHING TO LOOP BACK IF I ENTER PASSWORD WRONG, like a pop-up screen that will erase my_password
@@ -225,12 +225,9 @@ def get_tax_info(driver):
         pdf.click()
 
 
-"""
-   
-        print("ok")
         #T4A = driver.find_element_by_xpath('//*[@id="Ta"]/table[2]/tbody/tr[{}]/td[10]/a'.format(i))
 
-        #T4A.click()"""
+        #T4A.click()
 
 # rename file - naming convention is EENO + name + year of tax form
 
