@@ -382,7 +382,6 @@ def search_csv_files(EENO_list, col_names):
 
     #col_nums = [0, 1, 2, 3, 7, 9, 14, 15, 16, 19, 20, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 45, 46, 47, 48, 49, 50, 51, 52]
 
-​
 
     # information for string concatenation
 
