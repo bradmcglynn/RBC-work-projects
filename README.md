@@ -8,7 +8,7 @@ Filters through most recent member .csv file in order to find invalid addresses 
 
 Project 2: T4A Scraper - Python (Selenium, Pandas, NumPy)
 
-Project 3: Obituary Name COmpasrison Script (Pandas, Numpy)
+Project 3: Obituary Name Comparison Script (Pandas, Numpy)
 
 Project 4: Obituary Scraping Project (Selenium, Pandas, NumPy)
 
